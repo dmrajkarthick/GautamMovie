@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+                <!-- Customize your theme here. -->
+                <item name="colorPrimary">@color/colorPrimary</item>
+                <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+                <item name="colorAccent">@color/colorAccent</item>
+
+                <item name="android:datePickerDialogTheme">@style/MyDatePickerDialogTheme</item>
+                <item name="android:timePickerStyle">@style/Theme.MyTheme.TimePicker</item>
+        </style>
+
+        <style name="Theme.MyTheme.TimePicker" parent="android:Widget.Material.Light.TimePicker">
+                <item name="android:timePickerMode">clock</item>
+                <item name="android:headerBackground">#ff555555</item>
+                <item name="android:numbersTextColor">#FFFFFF</item>
+
+                <item name="android:numbersSelectorColor">#32C8</item>
+                <item name="android:numbersBackgroundColor">#00000000</item>
+                <item name="android:amPmTextColor">?android:attr/textColorSecondary</item>
+        </style>
+
+        <style name="MyDatePickerDialogTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+                <item name="android:datePickerStyle">@style/MyDatePickerStyle</item>
+        </style>
+
+        <style name="MyDatePickerStyle" parent="@android:style/Widget.Material.Light.DatePicker">
+                <item name="android:headerBackground">#FFFFFF</item>
+                <item name="android:calendarTextColor">#FFFFFF</item>
+        </style>
+</resources>
